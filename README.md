@@ -1,3 +1,3 @@
-# paintJS
+# PaintJS
 
 painter App made with Vanilla Javascript

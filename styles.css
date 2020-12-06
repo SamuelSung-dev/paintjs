@@ -1,0 +1,59 @@
+body {
+  background-color: #dfe6e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.pallette {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem 0;
+}
+.pallette__color {
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+#jsColor0 {
+  background-color: black;
+}
+#jsColor1 {
+  background-color: white;
+}
+#jsColor2 {
+  background-color: red;
+}
+#jsColor3 {
+  background-color: orange;
+}
+#jsColor4 {
+  background-color: yellow;
+}
+#jsColor5 {
+  background-color: green;
+}
+#jsColor6 {
+  background-color: skyblue;
+}
+#jsColor7 {
+  background-color: blue;
+}
+#jsColor8 {
+  background-color: purple;
+}
