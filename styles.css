@@ -52,31 +52,3 @@ body {
   margin: 0 0.5rem;
   cursor: pointer;
 }
-
-#jsColor0 {
-  background-color: black;
-}
-#jsColor1 {
-  background-color: white;
-}
-#jsColor2 {
-  background-color: red;
-}
-#jsColor3 {
-  background-color: orange;
-}
-#jsColor4 {
-  background-color: yellow;
-}
-#jsColor5 {
-  background-color: green;
-}
-#jsColor6 {
-  background-color: skyblue;
-}
-#jsColor7 {
-  background-color: blue;
-}
-#jsColor8 {
-  background-color: purple;
-}

@@ -6,7 +6,7 @@
     <link href="styles.css" rel="stylesheet" />
     <title>PaintJS</title>
   </head>
-  <body>
+  <body class="body">
     <canvas id="jsCanvas" class="canvas"> </canvas>
     <div class="controls">
       <div class="controls__brushsize">
@@ -24,15 +24,42 @@
         <button id="jsSave">Save</button>
       </div>
       <div id="jsPallette" class="pallette">
-        <div id="jsColor0" class="pallette__color"></div>
-        <div id="jsColor1" class="pallette__color"></div>
-        <div id="jsColor2" class="pallette__color"></div>
-        <div id="jsColor3" class="pallette__color"></div>
-        <div id="jsColor4" class="pallette__color"></div>
-        <div id="jsColor5" class="pallette__color"></div>
-        <div id="jsColor6" class="pallette__color"></div>
-        <div id="jsColor7" class="pallette__color"></div>
-        <div id="jsColor8" class="pallette__color"></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: black"
+        ></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: white"
+        ></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: red"
+        ></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: orange"
+        ></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: yellow"
+        ></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: green"
+        ></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: skyblue"
+        ></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: blue"
+        ></div>
+        <div
+          class="pallette__color jsColor"
+          style="background-color: purple"
+        ></div>
       </div>
     </div>
     <script src="app.js"></script>
