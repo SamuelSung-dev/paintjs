@@ -2,6 +2,7 @@ const canvas = document.getElementById("jsCanvas");
 /** @type {CanvasRenderingContext2D} */
 const ctx = canvas.getContext("2d");
 const colors = document.getElementsByClassName("jsColor");
+const brushSize = document.getElementById("jsBrushSize");
 
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
@@ -48,9 +49,14 @@ function onMouseUp() {
   stopPainting();
 }
 
-function handleColor(event) {
+function handleColorClick(event) {
   const color = event.target.style.backgroundColor;
   ctx.strokeStyle = color;
+}
+
+function handleBrushSize(event) {
+  const brushSize = event.target.value;
+  ctx.lineWidth = brushSize;
 }
 
 if (canvas) {
@@ -61,8 +67,12 @@ if (canvas) {
 }
 document.body.addEventListener("mouseup", onMouseUp);
 document.body.addEventListener("mousedown", startPainting);
-
-Array.from(colors).forEach((color) =>
-  color.addEventListener("click", handleColor)
-);
+if (colors) {
+  Array.from(colors).forEach((color) =>
+    color.addEventListener("click", handleColorClick)
+  );
+}
+if (brushSize) {
+  brushSize.addEventListener("input", handleBrushSize);
+}
 //console.log(colors);
